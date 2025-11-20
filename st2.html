@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suíte Um - Terra Madre</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho-geral">
+        <a href="./index.html"><img src="./img/logo.png" alt="Logo Terra Madre"></a>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="./index.html#quartos">QUARTOS</a></li>
+                <li><a href="./index.html#beneficios">BENEFÍCIOS</a></li>
+                <li><a href="./index.html#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="detalhe-suite meio-do-site">
+            <section class="topo">
+                <article class="foto-grandona">
+                    <img id="minhaImagem" src="./img/suite 2.jpg" alt="Quarto com cama dossel e banheira.">
+                    <p class="link-fotos">Clique para ver mais fotos</p>
+                    <div id="galeria-oculta" style="display: none;">
+                        <img src="./img/st2 1.jpg" alt="Lavabo com pia clássica e parede de tijolos.">
+                        <img src="./img/st2 2.jpg" alt="Cama de casal com dossel e mosquiteiro.">
+                        <img src="./img/st2 3.jpg" alt="Varanda com rede e vista para jardim.">
+                    </div>
+                </article>
+                <article>
+                    <h2 class="titulo-fino">Suíte <br> Dois</h2>
+                </article>
+            </section>
+            
+            <article class="informacoes-suite">
+                
+                <article class="texto-descricao">
+                    <p><strong>Suíte Rústica com Varanda e Banheira:</strong> Uma opção encantadora e romântica, com uma relaxante banheira integrada ao quarto e decoração rústico-chique.</p>
+                    <p>A suíte dispõe de uma acolhedora cama com dossel e portas que se abrem para uma varanda privativa com rede, onde você pode sentir a brisa e apreciar a vista para o verde, unindo total privacidade e conforto.</p>
+                </article>
+                
+                <a href="#contato" class="botao-reservar">Reservar</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer id="contato" class="parte-de-baixo">
+        <section class="meio-do-site conteudo-rodape">
+            <article>
+                <img src="./img/logo.png">
+            </article>
+            
+            <article class="info-contato">
+                <h4>FAÇA SUA RESERVA:</h4>
+                <p>Telefone: (11) 9999-9999</p>
+                <p>Email: seuemail@aqui.com</p>
+                <p>Endereço: Rua 12, Bairro Novo Ilha Bela</p>
+            </article>
+        </section>
+    </footer>
+    
+    <div id="meuModal" class="modal">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+        <img class="modal-conteudo" id="imgGrande">
+        <div id="legenda"></div>
+
+        <a class="prev" onclick="mudarSlide(-1)">&#10094;</a>
+        <a class="next" onclick="mudarSlide(1)">&#10095;</a>
+
+        <div id="barra-miniaturas"></div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
